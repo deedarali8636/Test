@@ -1,75 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Sim Owner Details</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-		}
-		.container {
-			width: 80%;
-			margin: 40px auto;
-			padding: 20px;
-			background-color: #f9f9f9;
-			border: 1px solid #ddd;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.form-group {
-			margin-bottom: 20px;
-		}
-		.form-group label {
-			display: block;
-			margin-bottom: 10px;
-		}
-		.form-group input[type="text"] {
-			width: 100%;
-			height: 40px;
-			padding: 10px;
-			font-size: 16px;
-			border: 1px solid #ccc;
-		}
-		.form-group input[type="submit"] {
-			background-color: #4CAF50;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM Database in Pakistan</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="container">
-		<h2>Sim Owner Details</h2>
-		<form id="sim-owner-form">
-			<div class="form-group">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-			</div>
-			<div class="form-group">
-				<label for="cnic">CNIC:</label>
-				<input type="text" id="cnic" name="cnic" required>
-			</div>
-			<div class="form-group">
-				<label for="sim-number">Sim Number:</label>
-				<input type="text" id="sim-number" name="sim-number" required>
-			</div>
-			<div class="form-group">
-				<input type="submit" value="Submit">
-			</div>
-		</form>
-	</div>
-
-	<script>
-		const form = document.getElementById('sim-owner-form');
-		form.addEventListener('submit', (e) => {
-			e.preventDefault();
-			const name = document.getElementById('name').value;
-			const cnic = document.getElementById('cnic').value;
-			const simNumber = document.getElementById('sim-number').value;
-			// You can add code here to send the data to a server or store it locally
-			console.log(name, cnic, simNumber);
-		});
-	</script>
+    <header>
+        <h1>SIM Database in Pakistan</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Available SIMs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Provider</th>
+                        <th>SIM Number</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jazz</td>
+                        <td>0300-1234567</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Ufone</td>
+                        <td>0333-7654321</td>
+                        <td>Inactive</td>
+                    </tr>
+                    <tr>
+                        <td>Telenor</td>
+                        <td>0345-9876543</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Zong</td>
+                        <td>0312-3456789</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SIM Database in Pakistan. All rights reserved.</p>
+    </footer>
 </body>
-  </html>
+</html>

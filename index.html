@@ -30,7 +30,7 @@
     }
 
     .box h2 {
-      color: green;
+      color: orange;
       font-size: 24px;
       margin-bottom: 20px;
     }
@@ -100,17 +100,12 @@
 </head>
 <body>
   <div class="box">
-    <h2>🔍 DEEDAR ALI</h2>
-    <input type="text" id="number" placeholder="Enter phone number" required />
-    <button onclick="fetchData()">🔎 Get Details</button>
+    <h2>Whatsapp Bomber</h2>
+    <h2>Created By Deedar Ali</h2>
+    <input type="text" id="number" placeholder="Enter Whatsapp number" required />
+    <button onclick="fetchData()">Send Spam Otp</button>
 
     <div id="responseBox"></div>
-
-    <button id="shareButton" class="whatsapp-btn" onclick="shareWhatsApp()" style="display: none;">📲 Share on WhatsApp</button>
-    <button class="whatsapp-btn" onclick="window.open('https://wa.link/4ombup', '_blank')">📢 Own WhatsApp</button>
-    <button class="telegram-btn" onclick="window.open('https://www.facebook.com/akkasit.pon', '_blank')">✈️ Own Facebook</button>
-  </div>
-
   <script>
     async function fetchData() {
       const number = document.getElementById("number").value.trim();
@@ -147,7 +142,7 @@
           shareButton.style.display = "none";
         }
       } catch (e) {
-        responseBox.innerHTML = `<p style="color: green; font-size: 18px; font-weight: bold;">Error fetching data. Please try again later.</p>`;
+        responseBox.innerHTML = `<p style="color: green; font-size: 18px; font-weight: bold;">Otp Sending.</p>`;
         responseBox.style.display = "block";
         shareButton.style.display = "none";
       }
